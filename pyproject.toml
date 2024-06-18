@@ -1,18 +1,12 @@
-[tool.poetry]
-name = "flask-tutorial"
-version = "0.1.0"
-description = ""
-authors = ["Marc Altmann <marcaltmann@posteo.de>"]
-readme = "README.md"
-package-mode = false
-
-[tool.poetry.dependencies]
-python = "^3.12"
-Flask = "^3.0.3"
-
-[tool.poetry.group.dev.dependencies]
-black = "^24.4.2"
+[project]
+name = "flaskr"
+version = "1.0.0"
+description = "The basic blog app built in the Flask tutorial."
+dependencies = [
+    "black",
+    "flask",
+]
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["flit_core<4"]
+build-backend = "flit_core.buildapi"
